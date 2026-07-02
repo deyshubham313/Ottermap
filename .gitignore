@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+venv/
+.env
+dataset/tiles/
+dataset/external/*.tif
+outputs/*/
+!outputs/geojson/
+models/*.pth
+*.egg-info/
+.DS_Store

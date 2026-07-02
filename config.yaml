@@ -1,0 +1,35 @@
+# Ottermap turf/grass segmentation - default configuration.
+# Every value here is also exposed as a CLI flag on the relevant script;
+# this file documents the defaults in one place.
+
+data:
+  raw_dir: dataset/raw
+  tiles_dir: dataset/tiles
+  tile_size: 512
+  overlap: 64            # overlap between tiles at dataset-build time
+  min_aoi_coverage: 0.3  # drop tiles with < 30% area inside the labelled AOI
+
+model:
+  backbone: b2            # b0 | b2 | b5  (see src/model.py for the tradeoff)
+  freeze_epochs: 10        # epochs of encoder-frozen decoder-only warmup
+  unfreeze_lr_mult: 0.1    # LR multiplier applied when the encoder unfreezes
+
+train:
+  batch_size: 8
+  epochs: 40
+  lr: 3.0e-4
+  seed: 42
+  amp: true
+  mode: lolo               # lolo (leave-one-location-out) | final
+
+inference:
+  tile_size: 512
+  overlap: 128             # larger overlap than training for smoother stitching
+  threshold: 0.5
+  tta: true
+  amp: true
+  open_kernel: 3
+  close_kernel: 5
+  min_area_sqm: 5.0
+  simplify_tolerance_deg: 1.0e-6
+  overlay_alpha: 0.45

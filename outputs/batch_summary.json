@@ -1,0 +1,54 @@
+[
+  {
+    "num_polygons": 206,
+    "total_turf_area_sqm": 76392.12855265946,
+    "total_turf_area_acres": 18.87690606709365,
+    "turf_area_fraction": 0.44765084187371035,
+    "mean_confidence": 0.7857801914215088,
+    "inference_time_s": 25.40379571914673,
+    "image": "dataset\\raw\\aerial_imagery_pack\\1.tiff",
+    "image_size_px": [
+      3811,
+      3407
+    ]
+  },
+  {
+    "num_polygons": 108,
+    "total_turf_area_sqm": 99638.59198475015,
+    "total_turf_area_acres": 24.62123228124293,
+    "turf_area_fraction": 0.6359713110989864,
+    "mean_confidence": 0.9118248820304871,
+    "inference_time_s": 27.050220012664795,
+    "image": "dataset\\raw\\aerial_imagery_pack\\2.tiff",
+    "image_size_px": [
+      3889,
+      3936
+    ]
+  },
+  {
+    "num_polygons": 66,
+    "total_turf_area_sqm": 99271.32626818639,
+    "total_turf_area_acres": 24.530478946251627,
+    "turf_area_fraction": 0.8072223881767171,
+    "mean_confidence": 0.8956610560417175,
+    "inference_time_s": 60.22194147109985,
+    "image": "dataset\\raw\\aerial_imagery_pack\\3.tiff",
+    "image_size_px": [
+      5906,
+      5429
+    ]
+  },
+  {
+    "num_polygons": 167,
+    "total_turf_area_sqm": 282759.2245610573,
+    "total_turf_area_acres": 69.87132604851993,
+    "turf_area_fraction": 0.5403717888726635,
+    "mean_confidence": 0.7448859810829163,
+    "inference_time_s": 5.454852104187012,
+    "image": "dataset\\external\\austin_zilker_park.tif",
+    "image_size_px": [
+      1536,
+      1536
+    ]
+  }
+]
